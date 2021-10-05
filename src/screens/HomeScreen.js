@@ -9,7 +9,7 @@ import { schedulerList } from '../data/constants'
 
 export default function HomeScheduler({ navigation }) {
     function onPress() {
-        // navigation.navigate('ListScheduler')
+        navigation.navigate('ListScheduler')
     }
 
     const todayScheduleIndex = schedulerList.findIndex(item => moment(item.startTime).isSame(moment(), 'date'))

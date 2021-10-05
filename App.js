@@ -13,7 +13,12 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name="HomeSceduler" component={HomeScheduler} options={{ headerShown: false }} />
-
+          <Stack.Screen name="ListScheduler" component={ListScheduler} options={{
+            title: "UPCOMING SCHEDULE",
+            headerStyle: {
+              backgroundColor: '#FFF333',
+            },
+          }} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
