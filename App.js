@@ -19,6 +19,12 @@ export default function App() {
               backgroundColor: '#FFF333',
             },
           }} />
+          <Stack.Screen name="DetailScheduler" component={DetailScheduler} options={({ route }) => ({
+            title: moment(route.params.data.date).format('DD MMMM YYYY'),
+            headerStyle: {
+              backgroundColor: '#FFF333',
+            },
+          })} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
